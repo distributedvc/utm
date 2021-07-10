@@ -1,0 +1,25 @@
+{
+  "name": "utm",
+  "version": 2,
+  "regions": ["syd1"],
+  "builds": [
+    {
+      "src": "api/**/*.ts",
+      "use": "@vercel/node",
+      "config": {
+        "helpers": false,
+        "maxDuration": 10
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "methods": ["GET"],
+      "dest": "api/index.ts",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  ]
+}

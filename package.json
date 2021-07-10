@@ -1,0 +1,81 @@
+{
+  "name": "@distributed/utm",
+  "description": "Small library to parse utm parameters",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": "https://github.com/distributedvc/utm",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "utm",
+    "parameters",
+    "params",
+    "library"
+  ],
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "resolutions": {
+    "**/tsdx/eslint-config-prettier": "8.3.0"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=node",
+    "lint": "eslint --ext .ts src/",
+    "lint:tsdx": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn lint"
+    }
+  },
+  "module": "dist/utm.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/utm.cjs.production.min.js",
+      "limit": "3 KB"
+    },
+    {
+      "path": "dist/utm.esm.js",
+      "limit": "3 KB"
+    }
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@size-limit/preset-small-lib": "^4.12.0",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.2",
+    "@vercel/node": "^1.11.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "prettier": "^2.3.1",
+    "size-limit": "^4.12.0",
+    "standard-version": "^9.3.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "query-string": "7.0.1"
+  }
+}
