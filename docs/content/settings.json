@@ -1,0 +1,10 @@
+{
+  "title": "Small library to parse utm parameters",
+  "url": "https://utm-docs.vercel.app",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "distributedvc/utm",
+  "twitter": "@Gomah"
+}
