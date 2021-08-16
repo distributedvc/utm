@@ -33,7 +33,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --env=node",
+    "test": "tsdx test",
     "lint": "eslint --ext .ts src/",
     "lint:tsdx": "tsdx lint",
     "prepare": "tsdx build",

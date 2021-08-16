@@ -9,7 +9,7 @@ type UtmParams = {
   [key: string]: string | string[] | undefined | null | boolean | number;
 };
 
-export function utm(query: string): UtmParams {
+export function utm(query: string = window?.location?.search): UtmParams {
   const utms = pick(query, (name) => name.startsWith('utm_'));
   return parse(utms);
 }
