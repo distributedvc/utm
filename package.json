@@ -1,7 +1,7 @@
 {
   "name": "@distributed/utm",
   "description": "Small library to parse utm parameters",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
