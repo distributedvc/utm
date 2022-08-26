@@ -1,7 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`UTM should extract correct utms from the query 1`] = `
-Object {
+exports[`UTM > should extract correct utms from the query 1`] = `
+{
   "utm_campaign": "name",
   "utm_content": "content",
   "utm_medium": "medium",
@@ -10,8 +10,8 @@ Object {
 }
 `;
 
-exports[`UTM should extract correct utms from window.location.search 1`] = `
-Object {
+exports[`UTM > should extract correct utms from window.location.search 1`] = `
+{
   "utm_campaign": "name",
   "utm_content": "content",
   "utm_medium": "medium",
@@ -20,8 +20,8 @@ Object {
 }
 `;
 
-exports[`UTM should ignore non utms params 1`] = `
-Object {
+exports[`UTM > should ignore non utms params 1`] = `
+{
   "utm_campaign": "name",
   "utm_content": "content",
   "utm_medium": "medium",
@@ -30,4 +30,4 @@ Object {
 }
 `;
 
-exports[`UTM should return an empty object if nothing is passed 1`] = `Object {}`;
+exports[`UTM > should return an empty object if nothing is passed 1`] = `{}`;

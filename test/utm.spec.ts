@@ -1,6 +1,5 @@
 import { utm } from '../src';
-
-global.window = Object.create(window);
+import { describe, it, expect } from 'vitest';
 
 describe('UTM', (): void => {
   it('should extract correct utms from the query', async (): Promise<void> => {

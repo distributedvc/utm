@@ -11,5 +11,5 @@ type UtmParams = {
 
 export function utm(query: string = window?.location?.search): UtmParams {
   const utms = pick(query, (name) => name.startsWith('utm_'));
-  return parse(utms);
+  return parse(utms) as UtmParams;
 }
