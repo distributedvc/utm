@@ -36,7 +36,7 @@
     "build": "rimraf dist/ && tsup src/index.ts --format esm,cjs --dts --minify",
     "test": "yarn lint && yarn vitest run --dom",
     "lint": "eslint --ext .ts src/",
-    "prepare": "tsdx build",
+    "prepare": "yarn build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish"
