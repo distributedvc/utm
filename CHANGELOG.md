@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/distributedvc/utm/compare/v0.0.8...v0.1.0) (2023-10-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop node 14 & bump deps
+
+* drop node 14 & bump deps ([8ad60c6](https://github.com/distributedvc/utm/commit/8ad60c671f19070c3ca9b4695e2e7f57c504f74f))
+
 ### [0.0.8](https://github.com/distributedvc/utm/compare/v0.0.7...v0.0.8) (2022-08-26)
 
 ### [0.0.7](https://github.com/distributedvc/utm/compare/v0.0.6...v0.0.7) (2022-08-26)
