@@ -1,4 +1,4 @@
-import { parse, pick } from 'query-string';
+import qs from 'query-string';
 
 type UtmParams = {
   utm_source?: string;
@@ -10,6 +10,6 @@ type UtmParams = {
 };
 
 export function utm(query: string = window?.location?.search): UtmParams {
-  const utms = pick(query, (name) => name.startsWith('utm_'));
-  return parse(utms) as UtmParams;
+  const utms = qs.pick(query, (name) => name.startsWith('utm_'));
+  return qs.parse(utms) as UtmParams;
 }
